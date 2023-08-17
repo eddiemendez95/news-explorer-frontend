@@ -1,20 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Footer.css";
+import githubIcon from "../../images/GitHub-Symbol.svg";
 
 function Footer() {
   return (
-    <div className="footer">
-      <div> &#x24B8; 2023 Supersite, Powered by News API</div>
-      <Link className="header__logo-link" to="/">
-        <button className="footer__home-button" type="button">
+    <footer className="footer">
+      <h2 className="footer__copywright">
+        {" "}
+        &#x24B8; 2023 Supersite, Powered by News API
+      </h2>
+      <div className="footer__links">
+        <a className="footer__home" href="#home">
           Home
-        </button>
-      </Link>
-      <a href="https://github.com/eddiemendez95">
-        <img src="../../images/GitHub-Symbol (1).png" alt="GitHub" />
-      </a>
-    </div>
+        </a>
+        <a
+          className="footer__practicum"
+          href="https://tripleten.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Practicum
+        </a>
+        <a
+          href="https://github.com/eddiemendez95"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="footer__git " src={githubIcon} alt="GitHub Icon" />
+        </a>
+      </div>
+    </footer>
   );
 }
 
