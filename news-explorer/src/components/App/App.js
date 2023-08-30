@@ -9,9 +9,11 @@ import { HashRouter } from "react-router-dom/cjs/react-router-dom.min";
 function App() {
   return (
     <HashRouter>
-      <Main />
-      <About />
-      <Footer />
+      <div className="page">
+        <Main />
+        <About />
+        <Footer />
+      </div>
     </HashRouter>
   );
 }

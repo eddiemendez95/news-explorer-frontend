@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import githubIcon from "../../images/GitHub-Symbol.svg";
+import linkedinIcon from "../../images/linkedin-icon-png-1600.png.svg";
 
 function Footer() {
   return (
@@ -27,6 +28,17 @@ function Footer() {
           rel="noreferrer"
         >
           <img className="footer__git " src={githubIcon} alt="GitHub Icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eddie-m-mendez/"
+          target="blank"
+          rel="noreferrer"
+        >
+          <img
+            className="footer__linked"
+            src={linkedinIcon}
+            alt="LinkedIn Icon"
+          />
         </a>
       </div>
     </footer>

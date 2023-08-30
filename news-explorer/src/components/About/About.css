@@ -1,0 +1,39 @@
+.about {
+  height: 625px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 100px 80px;
+}
+
+.about__picture {
+  border-radius: 1000px;
+  border: none;
+  height: 464px;
+  width: 375px;
+}
+
+.about__content {
+  display: flex;
+  width: 600px;
+  margin: auto;
+  flex-direction: column;
+}
+
+.about__title {
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  width: 600px;
+}
+
+.about__description {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 600px;
+}
