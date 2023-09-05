@@ -34,6 +34,7 @@
   color: #ffff;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .header__login-button {
@@ -48,4 +49,5 @@
   width: 176px;
   height: 48px;
   text-align: center;
+  cursor: pointer;
 }

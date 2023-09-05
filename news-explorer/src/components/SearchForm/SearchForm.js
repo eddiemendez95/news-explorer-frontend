@@ -1,32 +1,27 @@
 import React from "react";
 import "./SearchForm.css";
 
-function SearchForm({ handleFetchArticles }) {
-  //   const [isButtonClicked, setIsButtonClicked] = useState(false);
-  //   const [isQuery, setIsQuery] = useState("");
-
-  //   const buttonClassName = isButtonClicked
-  //     ? "header-home__search-wrap__button-clicked"
-  //     : "header-home__search-wrap__button";
-
-  //   const handleButtonClick = () => {
-  //     setIsButtonClicked(true);
-  //     setTimeout(function () {
-  //       setIsButtonClicked(false);
-  //     }, 100);
-  //     handleFetchArticles(`${isQuery.toLowerCase()}`);
+function SearchForm() {
   return (
-    <div className="searchform">
-      <h2 className="searchform__heading">What's going on in the world?</h2>
-      <p className="searchform__subheading">
+    <section className="search">
+      <h2 className="search__heading">What's going on in the world?</h2>
+      <p className="search__subheading">
         Find the latest news on any topic and save them in your personal
         account.
       </p>
-      <div className="searchform__bar">
-        <input className="searchform__input" placeholder="Search..." value="" />
-        <button className="seachform__button">Search</button>
-      </div>
-    </div>
+      <form className="search__form">
+        <fieldset className="search__form-fieldset">
+          <div className="search__form-container">
+            <input
+              className="search__form-input"
+              placeholder="Search..."
+              type="text"
+            />
+          </div>
+          <button className="search__form-button">Search</button>
+        </fieldset>
+      </form>
+    </section>
   );
 }
 
